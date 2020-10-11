@@ -36,6 +36,7 @@ public class BlockHasher {
             return sb.toString();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
+            System.out.println("error");
             return null;
         }
     }

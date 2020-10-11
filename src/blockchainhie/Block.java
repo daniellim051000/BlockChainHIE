@@ -14,7 +14,7 @@ public class Block implements Serializable{
     Integer index;
     String patientID;
     EHR healthRecord;
-    String hash, previousHash;
+    String hash , previousHash;
     long timestamp;
 /**
  * This constructor takes a new healthRecord and hash from previous block to create a new block
@@ -27,11 +27,13 @@ public class Block implements Serializable{
         this.timestamp = new Timestamp(System.currentTimeMillis()).getTime();
         byte[] thisBlock = Block.getBytes(this);
         if(thisBlock != null){
-            BlockHasher.hash(thisBlock);
+            ByteArrayOutputStream byteStream = new ByteArrayOutputStream();
+            byteStream.write()
+            this.hash = BlockHasher.hash(thisBlock);
         }
         //intialize hash here using the hash function from the BlockHasher class
     }
-    private static byte[] getBytes(Block block){
+    public static byte[] getBytes(Block block){
         try(ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                 ObjectOutputStream objOutputStream = new ObjectOutputStream(byteArrayOutputStream);)
         {
@@ -43,6 +45,16 @@ public class Block implements Serializable{
             return null;
         }
     }
+
+    public String getHash() {
+        return hash;
+    }
+
+    @Override
+    public String toString() {
+        return "Block{" + "hash=" + hash + ", previousHash=" + previousHash + ", timestamp=" + timestamp + '}';
+    }
+    
     
     
 }

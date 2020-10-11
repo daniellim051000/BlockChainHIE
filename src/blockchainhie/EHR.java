@@ -1,10 +1,12 @@
 package blockchainhie;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Shahiryar
  */
-public class EHR {
+public class EHR implements Serializable{
     private String patientID, doctor, healthcareProvider,observations,
             prescriptions, physicalExaminations, recommendations;
 
