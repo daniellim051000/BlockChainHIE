@@ -1,0 +1,20 @@
+[
+  {
+    "healthRecord": {
+      "patientID": "121233",
+      "doctor": "cdBdesG34"
+    },
+    "hash": "24c812319a2c560418e4852362bd8ab7ce52c71fd240287f9fd58633acbcdd1adbbdcd7050f766fae3dbb3a4c595a81d7c29ac03f2d5dfd5628cedac1",
+    "previousHash": "0",
+    "timestamp": 1602513056145
+  },
+  {
+    "healthRecord": {
+      "patientID": "fsdc1231",
+      "doctor": "1dsadf3"
+    },
+    "hash": "903db86365a7879f39d8a1def456fbf2734b614cefb671e48c0ec18925f1ac96b287842a6f237f0abf12c03ee94b8618dbf7ead9984a08ecb072684a86f",
+    "previousHash": "24c812319a2c560418e4852362bd8ab7ce52c71fd240287f9fd58633acbcdd1adbbdcd7050f766fae3dbb3a4c595a81d7c29ac03f2d5dfd5628cedac1",
+    "timestamp": 1602513056238
+  }
+]

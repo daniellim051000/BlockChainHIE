@@ -16,7 +16,7 @@ public class BlockHasher {
 //    private static final String ALGO = "MD5";;
 
     /**
-     *
+     * Calculates has for a given object ( in this case a block)
      * @param block byte[] from the block object
      * @return String hash of the block
      */
@@ -42,7 +42,7 @@ public class BlockHasher {
     }
 
     /**
-     * This function generates a random byte array used for salting
+     * Generates a random byte array used for salting
      * @return byte[] random salt
      * @throws Exception
      */
